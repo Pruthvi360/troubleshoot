@@ -11,5 +11,5 @@ usermod -aG sudo ansibleadmin
 nano /etc/sudoers
 ```
 ```
-ansibleadmin ALL=(ALL)    NOPASSD:ALL
+ansibleadmin ALL=(ALL)    NOPASSWD:ALL
 ```
