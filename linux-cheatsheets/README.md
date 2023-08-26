@@ -13,3 +13,15 @@ alias latest='ls -lrt | tail -1'
 source .bash_profile
 alias
 ```
+# Enabling SSH
+```
+nano /etc/ssh/sshd_config
+PasswordAuthentication yes
+systemctl restart sshd
+```
+# Authorized Keys
+```
+ssh-keygen
+cd ~ & cd .ssh
+nano authorized_keys
+```
