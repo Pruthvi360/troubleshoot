@@ -19,8 +19,12 @@ Confirm: Click Finish
 ```
 scp C:\Users\HP\Documents\netbox.ova root:192.168.0.100:/home
 ```
-# Step-4: Login to proxmox shell, Extract create qcow2 -format and attach to the VM
+# Step-5: Login to proxmox shell, Extract create qcow2 -format and attach to the VM
 ```
 tar -xvf netbox.ova
 qm importdisk <VM-ID> netbox.vmdk <storage volume of proxmox> -format qcow2
+```
+# Step-6: back to proxmox
+```
+Select VM> Hardware> Unused disk> edit> add> Select options> Click boot order> Drag hard disk to 2nd order> Start the VM
 ```
