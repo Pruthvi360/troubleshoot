@@ -1,6 +1,6 @@
 ```
 sudo apt update
-sudo apt install openvswitch-switch
+sudo apt install openvswitch-switch -y
 sudo systemctl start openvswitch-switch
 sudo systemctl enable openvswitch-switch
 sudo systemctl status openvswitch-switch
