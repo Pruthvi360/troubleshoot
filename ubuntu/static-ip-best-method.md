@@ -15,3 +15,14 @@ quit
 nmcli connection down static-ens18
 nmcli connection up static-ens18
 ```
+```
+nmcli connection edit static-ens19
+set ipv4.method manual
+set ipv4.addresses 192.168.0.12/24
+set ipv4.gateway 192.168.0.1
+set ipv4.dns 8.8.8.8,8.8.4.4
+save
+quit
+nmcli connection down static-ens19
+nmcli connection up static-ens19
+```
