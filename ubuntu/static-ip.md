@@ -1,3 +1,4 @@
+```
 sudo apt update
 sudo apt install openvswitch-switch -y
 sudo systemctl start openvswitch-switch
